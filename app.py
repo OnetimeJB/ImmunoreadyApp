@@ -49,7 +49,31 @@ set_background(background_image_path)
 st.markdown("""
 # 🧬 Immunoready: Peptide Safety Classifier
 
-Welcome to **Immunoready**, a web app to classify peptide sequences as **safe** or **unsafe**.
+## Welcome to ImmunoReady
+ImmunoReady is a cutting-edge AI-powered tool designed to predict the safety of MHC-bound peptides in the context of vaccine development. By leveraging advanced machine learning algorithms, ImmunoReady helps identify peptides with minimal risk of triggering autoimmune responses, thereby streamlining and improving the vaccine design process.
+
+### Key Features
+- Autoimmunity Risk Assessment: ImmunoReady is specifically trained to distinguish peptides that could potentially trigger autoimmune or inflammatory responses from those that are safe, based solely on their amino acid sequences.
+- MHC/HLA Agnostic: The tool operates independently of MHC class and HLA type, allowing for broad applicability across different populations and facilitating generalization.
+- Curated Training Data: Peptides used for training include known epitopes implicated in autoimmune and inflammatory diseases, as well as peptides derived from healthy tissues, ensuring robust discrimination between risky and safe candidates.
+- Vaccine Development Support: By flagging high-risk peptides early in the design pipeline, ImmunoReady helps researchers avoid sequences that could lead to adverse effects, accelerating safe vaccine development.
+
+### How It Works
+ImmunoReady analyzes peptide sequences submitted by the user and predicts their safety profile. The underlying model has been trained on a diverse dataset:
+
+- Risky: Peptides associated with known autoimmune and inflammatory disorders.
+- Safe: Peptides derived from healthy human tissues, considered safe for use in vaccines.
+
+### Use Cases
+- Epitope Screening: Quickly evaluate candidate peptides for their likelihood to induce autoimmunity.
+- Rational Vaccine Design: Select sequences most likely to be safe, reducing downstream risk and development costs.
+- Immunology Research: Explore sequence patterns and risk factors associated with autoimmunity at the peptide level.
+
+### Technical Overview
+- Input: Amino acid sequence of candidate peptide(s).
+- Output: Classification of each peptide as "Safe" or "Potentially Autoimmunity Triggering," with associated confidence scores.
+
+ImmunoReady empowers vaccine researchers to make informed, data-driven decisions, fostering innovation while prioritizing patient safety. For detailed documentation, support, and API access, please visit our [documentation page] or contact our team at [support email].
 
 ### ⚙️ Prediction options:
 A) Enter your peptide sequences manually (one per line)\n
