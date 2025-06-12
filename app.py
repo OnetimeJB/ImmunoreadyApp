@@ -50,7 +50,7 @@ st.markdown("""
 # 🧬 Immunoready: Peptide Safety Classifier
 
 ## Welcome to ImmunoReady
-ImmunoReady is a cutting-edge AI-powered tool designed to predict the safety of MHC-bound peptides in the context of vaccine development. By leveraging advanced machine learning algorithms, ImmunoReady helps identify peptides with minimal risk of triggering autoimmune responses, thereby streamlining and improving the vaccine design process.
+ImmunoReady is an AI-powered tool aiming to predict the safety of MHC-bound peptides in the context of vaccine development. By leveraging advanced machine learning algorithms, ImmunoReady helps identify peptides with minimal risk of triggering autoimmune responses, thereby streamlining and improving the vaccine design process.
 
 ### Key Features
 - Autoimmunity Risk Assessment: ImmunoReady is specifically trained to distinguish peptides that could potentially trigger autoimmune or inflammatory responses from those that are safe, based solely on their amino acid sequences.
@@ -73,7 +73,8 @@ ImmunoReady analyzes peptide sequences submitted by the user and predicts their 
 - Input: Amino acid sequence of candidate peptide(s).
 - Output: Classification of each peptide as "Safe" or "Potentially Autoimmunity Triggering," with associated confidence scores.
 
-ImmunoReady empowers vaccine researchers to make informed, data-driven decisions, fostering innovation while prioritizing patient safety. For detailed documentation, support, and API access, please visit our [documentation page] or contact our team at [support email].
+ImmunoReady empowers vaccine researchers to make informed, data-driven decisions, fostering innovation while prioritizing patient safety.
+DISCLAIMER: This tool is under-development and results might not be accurate. Do not use the results for any clinical purposes.
 
 ### ⚙️ Prediction options:
 A) Enter your peptide sequences manually (one per line)\n
@@ -83,17 +84,6 @@ B) Upload a CSV file with a column of peptide sequences
 - Peptides must be between **8 and 25 amino acids** long.
 - **⚠️ Do not use both input methods simultaneously.** If you do, only the **CSV input will be used**.
 """)
-
-
-# st.markdown("""# Welcome to Immunoready peptides classification
-# You have two options to use the model:
-# 1. simple text input: write the peptides you want to predict one after the other
-# 2. file uploader: upload a csv file with peptides you want to predict
-
-# Peptides you want to predict must have a lenght between 8 and 25.
-# Do not use both text input ans csv input at the same time.
-# If so, only the csv peptides will get a prediction.
-# """)
 
 st.divider()
 
